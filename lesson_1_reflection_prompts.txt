@@ -36,7 +36,7 @@ APENDIX:
 #git diff <id>	: shows the difference between versions from a given commit id
 #git checkout <id>	: reverts to a previous version of the code.
 #git initial	: initializes a NEW git repository.
-#git commit	: commits a snapshot of your files to the repository.
+#git commit -m "Commit message"	: commits a snapshot of files to the repository w/ a message describing the change.
 #git add <file name>	: stage files for commit. 
 ---
 - Type Of
