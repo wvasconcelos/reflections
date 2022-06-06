@@ -1,0 +1,80 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+A: Instead of comparing line-by-line, I was able to jump directly to lines
+that had different content. In large files, it would be virtually impossible
+to compare versions manually (or visually). 
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+A: It would allow for the recovery of lines of code deleted previously.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+A: Pros include having control over relevant versions and prevent frivolous
+and unecessary versions from being created. Cons include the risk of
+forgetting to create a version and losing some important information.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+A: Git views the source code as a single unit (commit), and a commit may have many files.
+Google Docs, on the other hand, views the document as the unit of concern.
+
+How can you use the commands git log and git diff to view the history of files?
+A: git log will show the ids of each commit while the git diff followed by those ids will show the differences or what has changed between those commits.
+
+How might using version control make you more confident to make changes that could break something?
+A: The ability to reverse changes is a game changer!
+
+Now that you have your workspace set up, what do you want to try using Git for?
+A: To clone the Braintree repository and start working on a new module for Zen Cart.
+
+APENDIX:
+-----
+#git log	: shows the log of each version (use --stat for more info).
+#git log --reverse --pretty="%h %s" : one per line w/ subject initial first.
+#git diff <id>	: shows the difference between versions from a given commit id
+#git checkout <id>	: reverts to a previous version of the code.
+#git initial	: initializes a NEW git repository.
+#git commit	: commits a snapshot of your files to the repository.
+#git add <file name>	: stage files for commit. 
+---
+- Type Of
+- Part Of
+- Operates On
+-
+---
+When to make a commit? rule of thumb: whenever there is a logical change.
+Write a short message explaining the logical change.
+---
+To use previous versions of your code, use:
+#git checkout <commit hash>
+---
+To revert back to the head branch:
+1. Find out which name of the head branch:
+#git branch -v 
+2. Revert to the original "head":
+#git checkout <head branch name>
+Note: the name may be "master".
+---
+Download and install GIT from: https://git-scm.com/downloads
+OR just run the following on PowerShell:
+winget install --id Git.Git -e --source winget
+---
+Run GIT Bash:
+start "C:\Program Files\Git\bin\sh.exe" --login
+---
+Change settings such as colors and info on git Bash:
+1. Add files to project's home directory:
+git-completion.bash
+git-prompt.sh
+.bash_profile
+--
+Note: git-completion will enable tab completion.
+2. Setup environment variables:
+git config --global core.editor "'C:\Program Files (x86)\Vim\vim82\vim.exe' -n -w"
+git config --global push.default upstream
+git config --global merge.conflictstyle diff3
+3. Add alias to .bash_profile:
+alias subl="C:/Program\ Files\ (x86)/Vim/vim82/vim.exe"
+---
