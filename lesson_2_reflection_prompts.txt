@@ -1,9 +1,10 @@
 What happens when you initialize a repository? Why do you need to do it?
-A: 
+A: It creates a hidden file called .git which contains meta data that allows git to work.
 
 How is the staging area different from the working directory and the
 repository?
 What value do you think it offers?
+A: The staging area is where files you want to keep version control are added to so that git can keep track of them. It allows you to choose which files to track, as opposed to tracking all files in the repository.
 
 How can you use the staging area to make sure you have one commit per logical
 change?
