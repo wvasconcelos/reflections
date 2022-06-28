@@ -1,31 +1,31 @@
-How did viewing a diff between two versions of a file help you see the bug that
+01. How did viewing a diff between two versions of a file help you see the bug that
 was introduced?
 A: Instead of comparing line-by-line, I was able to jump directly to lines
 that had different content. In large files, it would be virtually impossible
 to compare versions manually (or visually). 
 
-How could having easy access to the entire history of a file make you a more
+02. How could having easy access to the entire history of a file make you a more
 efficient programmer in the long term?
 A: It would allow for the recovery of lines of code deleted previously.
 
-What do you think are the pros and cons of manually choosing when to create a
+03. What do you think are the pros and cons of manually choosing when to create a
 commit, like you do in Git, vs having versions automatically saved, like Google
 docs does?
 A: Pros include having control over relevant versions and prevent frivolous
 and unecessary versions from being created. Cons include the risk of
 forgetting to create a version and losing some important information.
 
-Why do you think some version control systems, like Git, allow saving multiple
+04. Why do you think some version control systems, like Git, allow saving multiple
 files in one commit, while others, like Google Docs, treat each file separately?
 A: Git views the source code as a single unit (commit), and a commit may have many files.
 Google Docs, on the other hand, views the document as the unit of concern.
 
-How can you use the commands git log and git diff to view the history of files?
+05. How can you use the commands git log and git diff to view the history of files?
 A: git log will show the ids of each commit while the git diff followed by those ids will show the differences or what has changed between those commits.
 
-How might using version control make you more confident to make changes that could break something?
+06. How might using version control make you more confident to make changes that could break something?
 A: The ability to reverse changes is a game changer!
 
-Now that you have your workspace set up, what do you want to try using Git for?
+07. Now that you have your workspace set up, what do you want to try using Git for?
 A: To clone the Braintree repository and start working on a new module for Zen Cart.
-
+---

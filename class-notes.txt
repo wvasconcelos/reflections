@@ -1,13 +1,22 @@
 GIT CLASS - SUMMARY
 -------------------
+Cheat Sheet: https://github.com/github/training-kit/raw/master/downloads/github-git-cheat-sheet.pdf
+
 MAIN COMMANDS:
 #git log	: shows the log of each version (use --stat for more info).
 #git log --reverse --pretty="%h %s" : one per line w/ subject initial first.
+#git log --graph --oneline master coins 	: shows commits from coins to master.
 #git diff <id>	: shows the difference between versions from a given commit id
 #git checkout <id>	: reverts to a previous version of the code.
+#git checkout -b <branch name>	: creates a new branch and checks that out.
 #git initial	: initializes a NEW git repository.
 #git commit -m "Commit message"	: commits a snapshot of files to the repository w/ a message describing the change.
-#git add <file name>	: stage files for commit. 
+#git add <file name>	: stage files for commit.
+#git branch	: show branches
+#git branch <branch name> 	: creates a new branch.
+#git branch -d coins		: deletes the "coins" label in the branch
+#git merge master coins		: merges two branches specified by name.
+#git show <id>		: shows diff between a commit and its actual parent.
 --
 NOTE:
 Without ids, "git diff" will show differences between files in the working directory vs. staging area. Using "git diff --stage" will show the changes between the staging area and the most recent commit to the repository.

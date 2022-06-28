@@ -1,28 +1,27 @@
-What happens when you initialize a repository? Why do you need to do it?
+01. What happens when you initialize a repository? Why do you need to do it?
 A: It creates a hidden file called .git which contains meta data that allows git to work.
 
-How is the staging area different from the working directory and the
-repository?
-What value do you think it offers?
-A: The staging area is where files are added before they are considered for version control. 
-That way, Git allows you to choose which files to track, as opposed to tracking all files in the repository.
+02. How is the staging area different from the working directory and the
+repository? What value do you think it offers?
+A: The staging area is where files are added before they are considered for version control. That way, Git allows you to choose which files to track, as opposed to tracking all files in the repository.
 
-How can you use the staging area to make sure you have one commit per logical
+03. How can you use the staging area to make sure you have one commit per logical
 change?
-A: 
+A: The ability of adding files separatelly to the staging area can help commit logical changes separatelly.
 
-What are some situations when branches would be helpful in keeping your
-history
-organized? How would branches help?
-A: 
+04. What are some situations when branches would be helpful in keeping your
+history organized? How would branches help?
+A: When you need to try things out without compromising the original version, or when you need to create a very similar project and keep the original in place. Branches would keep the original version as the master, allowing for the development of competing versions.
 
-How do the diagrams help you visualize the branch structure?
-A: 
+05. How do the diagrams help you visualize the branch structure?
+A: It helps visualize reacheability of branches.
 
-What is the result of merging two branches together? Why do we represent it in
+06. What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
-A: 
+A: Merging two branches combines the changes introduced by each of the two separate branches. The new branch is represented as having two parents as it inherits changes from both.
 
-What are the pros and cons of Git's automatic merging vs. always doing merges
+07. What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
 A: 
+
+---
